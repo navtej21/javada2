@@ -1,0 +1,18 @@
+<h:body>
+    <h1>Course List</h1>
+    <h:dataTable value="#{courseBean.courses}" var="course">
+        <h:column>
+            <f:facet name="header">Title</f:facet>
+            #{course.title}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Fee</f:facet>
+            #{course.fee}
+        </h:column>
+        <h:column>
+            <h:commandButton value="Enroll" actionListener="#{courseBean.enroll}">
+                <f:setPropertyActionListener target="#{courseBean.selectedCourse}" value="#{course}"/>
+            </h:commandButton>
+        </h:column>
+    </h:dataTable>
+</h:body>

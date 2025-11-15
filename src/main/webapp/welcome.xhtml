@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <title>Welcome - Student Admission Portal</title>
+</h:head>
+
+<h:body style="margin:0; font-family:'Segoe UI', sans-serif;
+               background:linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+               display:flex; justify-content:center; align-items:center;
+               height:100vh;">
+
+    <div style="background:linear-gradient(135deg, #6a80f5, #7542b0);
+                border-radius:12px; padding:40px 60px;
+                text-align:center; box-shadow:0 8px 25px rgba(0,0,0,0.1);
+                color:white; max-width:700px; width:90%;">
+
+        <h1 style="margin-bottom:15px;">Welcome to Student Admission Portal</h1>
+        <p style="font-size:16px; color:#f0f0f0; margin-bottom:30px;">
+            Manage your student records efficiently with our JSF-based management system.
+        </p>
+
+        <div style="display:flex; justify-content:center; gap:20px;">
+            <h:form>
+                <h:commandButton value="Register Student"
+                                 action="registration.xhtml?faces-redirect=true"
+                                 style="background:#4CAF50; color:white; font-weight:600;
+                                        border:none; border-radius:20px; padding:10px 25px;
+                                        cursor:pointer; box-shadow:0 2px 5px rgba(0,0,0,0.2);
+                                        transition:0.3s;"/>
+
+                <h:commandButton value="View Dashboard"
+                                 action="dashboard.xhtml?faces-redirect=true"
+                                 style="background:#2196F3; color:white; font-weight:600;
+                                        border:none; border-radius:20px; padding:10px 25px;
+                                        cursor:pointer; box-shadow:0 2px 5px rgba(0,0,0,0.2);
+                                        transition:0.3s; margin-left:10px;"/>
+            </h:form>
+        </div>
+    </div>
+
+</h:body>
+</html>
